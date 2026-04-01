@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Queen 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen">
+  <h2>🔒 Just for You</h2>
+  <p>Only my love can enter 💙</p>
+  <input type="password" id="passInput" placeholder="Our special word…">
+  <button onclick="checkPassword()">Enter 💌</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="mainContent">
+
+  <div class="hearts"></div>
+  <div class="sparkles"></div>
+
+  <div class="container">
+    <h1 id="title"></h1>
+    <p id="typing"></p>
+    <p id="timer"></p>
+
+    <!-- SLIDESHOW GALLERY -->
+    <div class="gallery-slideshow">
+      <img src="Photo from 🤲🤲 (1).jpg" alt="Memory 1" class="slide active">
+      <img src="Photo from 🤲🤲 (2).jpg" alt="Memory 2" class="slide">
+      <img src="Photo from 🤲🤲.jpg" alt="Memory 3" class="slide">
+      <img src="IMG-20260203-WA0163.jpg" alt="Memory 4" class="slide">
+      <img src="IMG-20260309-WA0123.jpg" alt="Memory 5" class="slide">
+      <img src="IMG-20260326-WA0065.jpg" alt="Memory 6" class="slide">
+    </div>
+
+    <button onclick="playMusic()">🎵 Play Our Song 💙</button>
+    <button onclick="showMessage()">💌 Click if you miss me</button>
+
+    <p id="hiddenMessage" class="hidden">
+      No matter the distance… my heart is always with you 💌💙
+    </p>
+
+    <div class="timeline">
+      <h3>Our Sweet Memories 💫</h3>
+      <p>💜 The day we first met</p>
+      <p>😊 Our first long conversation</p>
+      <p>❤️ The moment I realized you’re my everything</p>
+      <p>💫 Every laugh and tear we’ve shared</p>
+    </div>
+
+    <p class="ending">
+      You’re my happiness, my heart, my everything 💙✨
+    </p>
+  </div>
+
+</div>
+
+<audio id="song" src="song.mp3"></audio>
+<audio id="voice" src="voice.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
