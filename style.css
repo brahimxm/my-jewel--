@@ -9,7 +9,6 @@ body {
   background: #050b18;
 }
 
-/* BACKGROUND */
 body::before {
   content: "";
   position: fixed;
@@ -98,7 +97,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* SLIDESHOW CONTAINER */
+/* SLIDESHOW */
 .gallery-slideshow {
   position: relative;
   width: 80%;
@@ -110,7 +109,6 @@ button:hover {
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
-/* SLIDES */
 .gallery-slideshow .slide {
   position: absolute;
   inset: 0;
@@ -196,4 +194,41 @@ button:hover {
   font-size: 1.2rem;
   font-weight: 600;
   color: #bcdfff;
+}
+
+/* TAG / CREDIT */
+#tag {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #a8c0ff;
+  text-shadow: 0 0 8px rgba(120,160,255,0.5);
+  font-style: italic;
+  animation: fadeIn 3s ease forwards;
+  opacity: 0;
+  position: relative;
+}
+
+#tag::after {
+  content: "✨";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  animation: sparkleTag 2s infinite;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes sparkleTag {
+  0%, 100% { opacity: 0; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-3px); }
+}
+
+/* RESPONSIVE */
+@media(max-width: 480px) {
+  .container { padding: 15px; }
+  #title { font-size: 1.5rem; }
+  button { padding: 8px 12px; font-size: 0.9rem; }
+  .gallery-slideshow { width: 95%; }
 }
